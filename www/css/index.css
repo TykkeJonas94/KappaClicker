@@ -1,0 +1,181 @@
+body, html
+{
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+.app
+{
+    background: url(../img/Kappa.png) no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    width: 340px;
+    height: 340px;
+
+}
+.KappaAnimation:active
+{
+    animation-name: KappaFace;
+    animation-duration: 0.5s;
+}
+@keyframes KappaFace {
+    0%  {
+        height: 340px;
+        width: 340px;
+
+    }
+    50% {
+        height: 350px;
+        width: 350px;
+    }
+    100% {
+        height: 340px;
+        width: 340px;
+    }
+}
+#TopMoney
+{
+
+    width: 100%;
+    height: 20px;
+    text-align: center;
+    line-height: inherit;
+    padding-bottom: 10px;
+    border-bottom: 1px #000000 solid;
+
+}
+.shop-icon
+{
+    width: 100px;
+    height: 50px;
+    border: 1px #000000 solid;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+.popup-header
+{
+    background-color: #c9c9c9;
+}
+.popup-footer
+{
+    background-color: #c9c9c9;
+}
+.shop-icon p
+{
+    text-align: center;
+}
+
+.menu-icon
+{
+    width: 100px;
+    height: 50px;
+    border: 1px #000000 solid;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+.menu-icon p
+{
+    text-align: center;
+}
+#KPS
+{
+    line-height: 3;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 130px;
+    border-top: 1px #000000 solid;
+    border-bottom: 1px #000000 solid;
+    text-align: center;
+}
+#Menu a
+{
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.CenterPopup
+{
+    margin-left: 1%;
+}
+.ticket
+{
+    color: blue;
+    position: absolute;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+#Reset a
+{
+    margin-left: 40%;
+}
+
+
+
+
+
+
+
+
+#effectListDiv{
+    padding: 0;
+    margin: 0;
+}
+#headings, .effects{
+    padding: 0;
+    margin: 0;
+    height: 50px;
+    width: 100%;
+}
+#headings h3{
+    width: 25%;
+    float: left;
+    margin-top: 0;
+    border-bottom: 1px solid black;
+}
+.effects p{
+    width: 25%;
+    height: 100%;
+    float: left;
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
