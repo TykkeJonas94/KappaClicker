@@ -90,6 +90,9 @@ body, html
     border-bottom: 1px #000000 solid;
     text-align: center;
 }
+#KPS p{
+    margin: 0;
+}
 #Menu a
 {
     display: block;
