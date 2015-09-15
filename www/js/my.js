@@ -1,12 +1,12 @@
 
 
 var Kappas = 0;            // Here comes the money!
-var KappasPerSecond = 1;    // Kappas Per Second!
+var KappasPerSecond = 0;    // Kappas Per Second!
 var KappaPerClick = 1;      // Fuck nu af!
 
 
 (function($){
-    setKappaPerSecond(0);
+    setKappaPerSecond(KappasPerSecond);
     // Save games
     $(document).on('click','#Resetme', function(){
         window.localStorage.setItem("GameSave", JSON.stringify(
