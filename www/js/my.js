@@ -1,12 +1,12 @@
 
 
 var Kappas = 0;            // Here comes the money!
-var KappasPerSecond = 0;    // Kappas Per Second!
+var KappasPerSecond = 1;    // Kappas Per Second!
 var KappaPerClick = 1;      // Fuck nu af!
 
 
 (function($){
-
+    setKappaPerSecond(0);
     // Save games
     $(document).on('click','#Resetme', function(){
         window.localStorage.setItem("GameSave", JSON.stringify(
@@ -40,7 +40,7 @@ var KappaPerClick = 1;      // Fuck nu af!
     // click on kappa for money
     $(document).on('click','.app',function()
     {
-        SetKappas(KappaPerClick);
+        setKappas(KappaPerClick);
 
 
         CreateTicket();
