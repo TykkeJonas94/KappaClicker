@@ -32,7 +32,7 @@
 
         <!-- Phone picture div -->
         <div class="index col-xs-6" id="PhonePicture">
-            <img src="img/phone.png" alt="phone">
+            <img src="img/phone.png" alt="phone" class="img-responsive">
         </div>
 
         <div class="index2 col-xs-12" id="TheTeam">
@@ -50,6 +50,22 @@
                 Etiam mauris odio, scelerisque eu laoreet in, commodo volutpat diam. Sed leo libero, consectetur eget ex ut, accumsan dictum lacus.
                 Vivamus aliquet id eros quis dignissim. Nulla semper, augue eu tincidunt dapibus, mi quam posuere quam, vel imperdiet mauris augue eu turpis.
                 Suspendisse semper mauris in magna tristique elementum. </p>
+        </div>
+
+        <div class="index3 col-xs-12" id="Contact">
+            <h1>Contact</h1>
+            <form>
+                Name:<br>
+                <input type="text" name="name" placeholder="Name">
+                <br>
+                Email:<br>
+                <input type="email" name="email" placeholder="Email">
+                <br>
+                Comment:<br>
+                <input type="text" name="comment" placeholder="Comment">
+                <br><br>
+                <input type="submit" value="Submit">
+            </form>
         </div>
     </div>
 
