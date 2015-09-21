@@ -73,6 +73,7 @@
                 <ul>
                     <li class="footerli">Download</li>
                 </ul>
+                <p>TEXT TEXT TEXT TEXrT</p>
             </div>
         </div>
     </div>
