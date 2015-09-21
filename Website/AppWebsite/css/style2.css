@@ -33,14 +33,7 @@ p
     height: 40px;
     margin: auto 0 auto 25vh;
 }
-#PhonePicture
-{
-    height: 200px;
-    top: 30vh;
-    position: relative;
-  /*  background-image: url("../img/phone.png");
-    background-repeat: no-repeat; */
-}
+
 .container-fluid
 {
     padding-left: 0;
@@ -176,5 +169,44 @@ li a
 {
     height: 100vh;
     box-sizing: border-box;
+}
+#Formdiv
+{
+    width: 9%;
+    margin: 0 auto;
+}
+input
+{
+    height: 3rem;
+    width: 25rem;
+}
+#comment
+{
+    resize: none;
+}
+#footer
+{
+    position: absolute;
+    bottom: 0;
+    margin-left: 50rem;
+    background-color: red;
+    height: 10rem;
+}
+.footerli
+{
+    text-decoration: underline;
+    list-style-type: none;
 
+}
+#Download
+{
+    margin-left: 200px;
+}
+#PhonePicture
+{
+    height: 200px;
+    top: 30vh;
+    width: 200px;
+    /*  background-image: url("../img/phone.png");
+      background-repeat: no-repeat; */
 }

@@ -13,9 +13,9 @@
         <!-- Menu -->
         <div id="Menudiv">
             <ul class="navigation">
-                <li class="orangeNav"><a href="#container">Download</a></li>
-                <li class="yellowNav"><a href="#TheTeam">The Team</a></li>
-                <li class="greenNav"><a href="#Contact"> Contact </a></li>
+                <li class="orangeNav"><a href="#container"><span class="glyphicon glyphicon-download-alt"></span> Download</a></li>
+                <li class="yellowNav"><a href="#TheTeam"><span class="glyphicon glyphicon-user"></span> The Team</a></li>
+                <li class="greenNav"><a href="#Contact"><span class="glyphicon glyphicon-star"></span> Contact </a></li>
             </ul>
         </div>
         <span class="glyphicon glyphicon-list" id="Menu"><br>Menu</span>
@@ -53,22 +53,29 @@
         </div>
 
         <div class="index3 col-xs-12" id="Contact">
-            <h1>Contact</h1>
-            <form>
-                Name:<br>
-                <input type="text" name="name" placeholder="Name">
-                <br>
-                Email:<br>
-                <input type="email" name="email" placeholder="Email">
-                <br>
-                Comment:<br>
-                <input type="text" name="comment" placeholder="Comment">
-                <br><br>
-                <input type="submit" value="Submit">
-            </form>
+            <div id="Formdiv">
+                <h1>Contact</h1>
+                <form id="ContactForm">
+                    <input type="text" name="name" placeholder="Name">
+                    <br>
+                    <br>
+                    <input type="email" name="email" placeholder="Email">
+                    <br>
+                    <br>
+                    <textarea form="ContactForm" placeholder="Comment" cols="38" rows="10" name="comment" id="comment"></textarea>
+                    <br>
+                    <br>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+
+            <div class="col-xs-6" id="footer">
+                <ul>
+                    <li class="footerli">Download</li>
+                </ul>
+            </div>
         </div>
     </div>
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> <!-- jquery lib -->
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> <!-- Bootstrap js -->
     <script src="js/scroll.js"></script> <!-- scrolls down page when link is clicked -->
