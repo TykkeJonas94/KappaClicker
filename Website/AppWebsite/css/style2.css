@@ -13,8 +13,6 @@ p
     margin-right: auto;
     background: #2196F3 none repeat scroll;
 }
-
-
 .index
 {
     background: #2196F3 none repeat scroll;
@@ -40,8 +38,8 @@ p
     height: 200px;
     top: 30vh;
     position: relative;
-    background-image: url("../img/phone.png");
-    background-repeat: no-repeat;
+  /*  background-image: url("../img/phone.png");
+    background-repeat: no-repeat; */
 }
 .container-fluid
 {
@@ -92,7 +90,6 @@ p
     width: 100%;
     box-sizing: border-box;
 }
-
 .navigation
 {
     list-style: outside none none;
@@ -153,16 +150,13 @@ li a
     font-weight: bold;
     color: #FFFFFF;
 }
-.GoUp
+#TheTeam h1
 {
-
+    position: absolute;
+    margin: 25px 45% auto;
 }
-@keyframes GoUp {
-    0%   {top: 25px;}
-    25%  {top: 58px;}
-    75%  {top: 91px}
-    100% {top: 125px;}
+#TheTeam p
+{
+    margin-top: 10%;
+    margin-left: 46%;
 }
-
-
-

@@ -32,6 +32,7 @@
     $('#Menu').click(function() {
         var menu = $('#Menu');
         if( !$("#Menu").is(":animated") ){
+
             if ($('#Menudiv').is(":visible")) {
                 console.log("function 2 going up");
                 $(menu).finish().stop().animate({

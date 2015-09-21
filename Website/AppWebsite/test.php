@@ -2,7 +2,6 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="height=device-height, initial-scale=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> <!-- Booststrap css -->
     <link rel="stylesheet" type="text/css" href="css/style2.css">
@@ -12,8 +11,6 @@
     <div class="container-fluid" id="container">
 
         <!-- Menu -->
-
-
         <div id="Menudiv">
             <ul class="navigation">
                 <li class="orangeNav"><a href="#container">Download</a></li>
@@ -35,21 +32,17 @@
 
         <!-- Phone picture div -->
         <div class="index col-xs-6" id="PhonePicture">
+            <img src="img/phone.png" alt="phone">
         </div>
 
         <div class="index2 col-xs-12" id="TheTeam">
-            <h1> hello</h1>
+            <h1> The Team</h1>
+            <p>Kenneth </p>
         </div>
     </div>
-
-
-
-
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> <!-- jquery lib -->
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> <!-- Bootstrap js -->
     <script src="js/scroll.js"></script> <!-- scrolls down page when link is clicked -->
-
-
 </body>
 </html>
