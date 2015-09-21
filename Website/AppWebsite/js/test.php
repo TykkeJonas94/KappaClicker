@@ -15,7 +15,7 @@
             <ul class="navigation">
                 <li class="orangeNav"><a href="#container">Download</a></li>
                 <li class="yellowNav"><a href="#TheTeam">The Team</a></li>
-                <li class="greenNav"><a href="#Contact"> Contact </a></li>
+                <li class="greenNav"><a href="#"> Test </a></li>
             </ul>
         </div>
         <span class="glyphicon glyphicon-list" id="Menu"><br>Menu</span>
@@ -50,22 +50,6 @@
                 Etiam mauris odio, scelerisque eu laoreet in, commodo volutpat diam. Sed leo libero, consectetur eget ex ut, accumsan dictum lacus.
                 Vivamus aliquet id eros quis dignissim. Nulla semper, augue eu tincidunt dapibus, mi quam posuere quam, vel imperdiet mauris augue eu turpis.
                 Suspendisse semper mauris in magna tristique elementum. </p>
-        </div>
-
-        <div class="index3 col-xs-12" id="Contact">
-            <h1>Contact</h1>
-            <form>
-                Name:<br>
-                <input type="text" name="name" placeholder="Name">
-                <br>
-                Email:<br>
-                <input type="email" name="email" placeholder="Email">
-                <br>
-                Comment:<br>
-                <input type="text" name="comment" placeholder="Comment">
-                <br><br>
-                <input type="submit" value="Submit">
-            </form>
         </div>
     </div>
 

@@ -11,7 +11,7 @@
             if (target.length) {
                 event.preventDefault();
                 $('html, body').finish().stop().animate({
-                    scrollTop: target.offset().top
+                    scrollTop: target.offset().top - 100
                 }, 1000);
                     console.log("function 1 going up");
                 $('#Menu').animate({

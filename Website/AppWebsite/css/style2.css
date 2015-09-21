@@ -172,3 +172,9 @@ li a
 {
     margin-top: 1%;
 }
+#Contact
+{
+    height: 100vh;
+    box-sizing: border-box;
+
+}
