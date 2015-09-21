@@ -1,0 +1,168 @@
+h1
+{
+    font-family: 'Verdana', Arial, Helvetica, sans-serif;
+    font-size:20px;
+}
+p
+{
+    font-family: 'Arial', Helvetica, sans-serif;
+}
+#container
+{
+    margin-left: auto;
+    margin-right: auto;
+    background: #2196F3 none repeat scroll;
+}
+
+
+.index
+{
+    background: #2196F3 none repeat scroll;
+    height: 100vh;
+    display: flex;
+    box-sizing: border-box;
+}
+#downloadbtn:hover
+{
+   background-color: #569541;
+    text-decoration: underline;
+}
+#downloadbtn
+{
+    z-index: 5;
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    height: 40px;
+    margin: auto 0 auto 25vh;
+}
+#PhonePicture
+{
+    height: 200px;
+    top: 30vh;
+    position: relative;
+    background-image: url("../img/phone.png");
+    background-repeat: no-repeat;
+}
+.container-fluid
+{
+    padding-left: 0;
+    padding-right: 0;
+}
+.index2
+{
+    background: #FF5722 none repeat scroll;
+    height: 100vh;
+    display: flex;
+    box-sizing: border-box;
+}
+#Menu
+{
+    position: fixed;
+    width: 40px;
+    top: 25px;
+    left: 25px;
+    z-index: 9999;
+    cursor: pointer;
+    color: #FFF;
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+  /*  transition: all 1s ease 0s; */
+}
+.glyphicon-list:before {
+    font-size: 2.5em;
+}
+#Download h1
+{
+    position: absolute;
+    margin: 30vh auto auto 25vw;
+    text-align: center;
+}
+#Download p
+{
+    top: -25px;
+    position: relative;
+    left: 25vw;
+    margin-top: 40vh;
+    padding-right: 30px;
+}
+#Menudiv
+{
+    display: none;
+    height: 100px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.navigation
+{
+    list-style: outside none none;
+    padding: 0;
+    width: 101%;
+    height: 100px;
+    margin: 0 auto;
+    position: fixed;
+    z-index: 10;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.25), 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+ul.navigation li {
+    display: inline-block;
+    width: 33.3333%;
+    height: 100px;
+    text-align: center;
+    float: left;
+}
+ul.navigation li a {
+    font-family: "proxima-nova", sans-serif;
+    font-size: 1.5em;
+    height: 80px;
+    text-transform: capitalize;
+}
+ul.navigation li a {
+    text-decoration: none;
+    margin: 0;
+    display: block;
+    height: 100px;
+    line-height: 100px;
+    width: 100%;
+}
+ul.navigation
+{
+    list-style: outside none none;
+}
+ul.navigation li {
+    text-align: center;
+}
+li.orangeNav {
+   /*  background: #FFC02B none repeat scroll; */
+    background: #FF7300 none repeat scroll;
+
+}
+li.greenNav
+{
+    /* #FC6C1E */
+    background: #F2780C none repeat scroll;
+}
+li.yellowNav
+{
+    /* #FFA200 */
+    background: #FA8D2D none repeat scroll;
+}
+
+li a
+{
+    font-weight: bold;
+    color: #FFFFFF;
+}
+.GoUp
+{
+
+}
+@keyframes GoUp {
+    0%   {top: 25px;}
+    25%  {top: 58px;}
+    75%  {top: 91px}
+    100% {top: 125px;}
+}
+
+
+
