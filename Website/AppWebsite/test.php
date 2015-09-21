@@ -37,7 +37,19 @@
 
         <div class="index2 col-xs-12" id="TheTeam">
             <h1> The Team</h1>
-            <p>Kenneth </p>
+            <h4>Kenneth</h4><br>
+            <p class="job">Backend & frontend developer</p>
+               <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac sem lorem. Nunc egestas purus eu convallis vulputate.
+                Maecenas sit amet augue lobortis, aliquet augue et, egestas orci.
+                Nullam vulputate elit sed aliquet consequat. In vel pulvinar risus.
+                Integer vehicula magna id posuere pharetra. Aliquam dictum mollis molestie.
+                Quisque finibus lectus neque, id scelerisque massa fermentum non. </p>
+            <h4>Jonas</h4>
+            <p class="job">Backend & frontend developer </p>
+                <p>Pellentesque fringilla scelerisque magna, sit amet vehicula nisl ultricies vitae.
+                Etiam mauris odio, scelerisque eu laoreet in, commodo volutpat diam. Sed leo libero, consectetur eget ex ut, accumsan dictum lacus.
+                Vivamus aliquet id eros quis dignissim. Nulla semper, augue eu tincidunt dapibus, mi quam posuere quam, vel imperdiet mauris augue eu turpis.
+                Suspendisse semper mauris in magna tristique elementum. </p>
         </div>
     </div>
 
