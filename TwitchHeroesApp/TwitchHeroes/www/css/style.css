@@ -1,28 +1,29 @@
 .money
 {
-    color: red;
+    background-color: red;
 }
 .level
 {
-    color: blue;
+    background-color: blue;
 }
 .name
 {
-    color: black;
+    color: white;
+    background-color: black;
 }
 .enemy
 {
-    color: yellow;
+    background-color: yellow;
 }
 .health
 {
-    color: orange;
+    background-color: orange;
 }
 .menu
 {
-    color: #4B946A;
+    background-color: #4B946A;
 }
 .shop
 {
-    color: aqua;
+    background-color: aqua;
 }
