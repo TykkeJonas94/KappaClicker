@@ -11,11 +11,11 @@ p
 {
     margin-left: auto;
     margin-right: auto;
-    background: #2196F3 none repeat scroll;
+    background: #efefef none repeat scroll;
 }
 .index
 {
-    background: #2196F3 none repeat scroll;
+    background: #efefef none repeat scroll;
     height: 100vh;
     display: flex;
     box-sizing: border-box;
@@ -31,7 +31,7 @@ p
     -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
     -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
     height: 40px;
-    margin: auto 0 auto 25vh;
+    margin: 70vh 0 auto 25vh;
 }
 
 .container-fluid
@@ -47,7 +47,6 @@ p
     left: 25px;
     z-index: 9999;
     cursor: pointer;
-    color: #FFF;
     letter-spacing: 1px;
     font-size: 1.5rem;
   /*  transition: all 1s ease 0s; */
@@ -66,7 +65,7 @@ p
     top: -25px;
     position: relative;
     left: 25vw;
-    margin-top: 40vh;
+    margin-top: 50vh;
     padding-right: 30px;
 }
 #Menudiv
@@ -138,7 +137,7 @@ li a
 }
 .index2
 {
-    background: #FF5722 none repeat scroll;
+    background: #dbdbdb none repeat scroll;
     height: 100vh;
     box-sizing: border-box;
 }
@@ -165,6 +164,10 @@ li a
 {
     margin-top: 1%;
 }
+.Twitchh1
+{
+    font-size: 4rem;
+}
 #Contact
 {
     height: 100vh;
@@ -183,29 +186,32 @@ input
 #comment
 {
     resize: none;
+    width: 250px;
 }
 #footer
 {
     position: absolute;
     bottom: 0;
     margin-left: 50rem;
-    background-color: red;
+    background-color: rgba(0,0,0,0.5);
     height: 10rem;
+
 }
-.footerli
+#footer p
 {
-    text-decoration: underline;
-    list-style-type: none;
+    margin-top: 45px;
+    text-align: center;
 }
+
 #Download
 {
     margin-left: 200px;
 }
 #PhonePicture
 {
-    height: 200px;
+    height: 480px;
     top: 30vh;
-    width: 200px;
+    width: 300px;
     /*  background-image: url("../img/phone.png");
       background-repeat: no-repeat; */
 }

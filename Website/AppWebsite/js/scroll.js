@@ -15,7 +15,7 @@
                 }, 1000);
                     console.log("function 1 going up");
                 $('#Menu').animate({
-                    'top': "-=100px" //moves right
+                    'top': "-=100px"
                 }, speed, 'linear');
                 $('#Menudiv ul').slideUp(1000);
                 $('#Menudiv').slideUp(1000);
@@ -32,7 +32,6 @@
     $('#Menu').click(function() {
         var menu = $('#Menu');
         if( !$("#Menu").is(":animated") ){
-
             if ($('#Menudiv').is(":visible")) {
                 console.log("function 2 going up");
                 $(menu).finish().stop().animate({
@@ -45,7 +44,7 @@
             {
                 console.log("function 3 going down");
                 $(menu).finish().stop().animate({
-                    'top': "+=100px" //moves right
+                    'top': "+=100px"
                 },speed,'linear');
                 $('#Menudiv').slideDown(600);
                 $('#Menudiv ul').slideDown(600);

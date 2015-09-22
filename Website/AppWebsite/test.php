@@ -7,7 +7,6 @@
     <link rel="stylesheet" type="text/css" href="css/style2.css">
 </head>
 <body>
-
     <div class="container-fluid" id="container">
 
         <!-- Menu -->
@@ -20,24 +19,24 @@
         </div>
         <span class="glyphicon glyphicon-list" id="Menu"><br>Menu</span>
         <div class="index col-xs-6" id="Download">
-            <h1>TwitchHeroes in App store now!</h1>
+            <h1 class="Twitchh1">TwitchHeroes in App stores now!</h1>
             <p>TwitchHeroes is now in App stores free to download. <br>
             Are you ready for endless fun?
-            Then TwitchHeroes is for you!</p>
+            Then TwitchHeroes is for you! <br>
+                Bacon ipsum dolor amet frankfurter hamburger shoulder beef <br> ribs beef. Shankle chicken meatloaf sausage landjaeger tri-tip.<br> Ground round swine brisket, drumstick porchetta ball tip ribeye<br> cupim tenderloin pancetta short loin sausage.<br> Chuck drumstick tongue andouille </p>
 
             <!-- --------------------------------------------------MAKE DOWNLOAD - REMEMBER------------------------------------------------- -->
             <button type="button" class="btn btn-success" id="downloadbtn">Download</button>
         </div>
 
-
         <!-- Phone picture div -->
         <div class="index col-xs-6" id="PhonePicture">
-            <img src="img/phone.png" alt="phone" class="img-responsive">
+            <img src="img/phone3.png" alt="phone" class="img-responsive">
         </div>
 
         <div class="index2 col-xs-12" id="TheTeam">
             <h1> The Team</h1>
-            <h4>Kenneth</h4><br>
+            <h4>Kenneth</h4>
             <p class="job">Backend & frontend developer</p>
                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac sem lorem. Nunc egestas purus eu convallis vulputate.
                 Maecenas sit amet augue lobortis, aliquet augue et, egestas orci.
@@ -55,14 +54,14 @@
         <div class="index3 col-xs-12" id="Contact">
             <div id="Formdiv">
                 <h1>Contact</h1>
-                <form id="ContactForm">
+                <form id="ContactForm" method="POST">
                     <input type="text" name="name" placeholder="Name">
                     <br>
                     <br>
                     <input type="email" name="email" placeholder="Email">
                     <br>
                     <br>
-                    <textarea form="ContactForm" placeholder="Comment" cols="38" rows="10" name="comment" id="comment"></textarea>
+                    <textarea form="ContactForm" placeholder="Comment" cols="36" rows="10" name="comment" id="comment"></textarea>
                     <br>
                     <br>
                     <input type="submit" value="Submit">
@@ -70,10 +69,7 @@
             </div>
 
             <div class="col-xs-6" id="footer">
-                <ul>
-                    <li class="footerli">Download</li>
-                </ul>
-                <p>TEXT TEXT TEXT TEXrT</p>
+                <p>Address: H.C. Andersenvej 9 </p>
             </div>
         </div>
     </div>
