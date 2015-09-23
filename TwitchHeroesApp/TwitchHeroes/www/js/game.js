@@ -4,27 +4,47 @@
 
 var Money = 0;
 var Level = 1;
-var currentEnemy = 0;
+var enemyCount = 0;
 var maxEnemy = 10;
-var enemyCounter = currentEnemy + " / " + maxEnemy;
+var enemyCounter = enemyCount + " / " + maxEnemy;
 var CurrentEnemy = new MakeEnemy(EnemyList[Math.floor(Math.random() * EnemyList.length)], Level * 10, Level * 200);
+
 
 (function($)
 {
-
     $('#moneyP').replaceWith("<p id='#moneyP'>$ "+ Money +"</p>");
-    $('#levelP').replaceWith("<p id='#levelP'>Level: "+ Level +"</p>");
+    //$('#levelP').replaceWith("<p id='#levelP'>Level: "+ Level +"</p>");
+    //$('#counterP').replaceWith("<p id='#counterP'>"+ enemyCounter +"</p>");
     $('#enemyImg').replaceWith("<img src='"+ CurrentEnemy.img +"' alt='Enemy' id='enemyImg' class='ClickAnimation'>");
+
+    window.UpdateLevel = function(){
+        Level++;
+
+        $('#levelP').replaceWith("<p id='#levelP'>Level: "+ Level +"</p>");
+    };
+
+    window.UpdateCounter = function(){
+        enemyCount++;
+
+        $('#counterP').replaceWith("<p id='#counterP'>"+ enemyCounter +"</p>");
+    };
 
 })(jQuery);
 
-    function EnemyCounter(){
+function EnemyCounter(){
 
-        CurrentEnemy = new MakeEnemy(EnemyList[Math.floor(Math.random() * EnemyList.length)], Level * 10, Level * 200);
-        currentEnemy++;
+    CurrentEnemy = new MakeEnemy(EnemyList[Math.floor(Math.random() * EnemyList.length)], Level * 10, Level * 200);
+    enemyCount++;
 
-        if(currentEnemy >= maxEnemy){
-            Level++;
-        }
+    if(enemyCount >= maxEnemy){
+        UpdateLevel();
     }
+}
 
+function UpdateCounter(){
+
+}
+
+function UpdateGold(){
+
+}
