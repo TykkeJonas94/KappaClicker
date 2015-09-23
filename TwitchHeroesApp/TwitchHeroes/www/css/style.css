@@ -8,9 +8,6 @@ p{
     font-weight: bold;
     color: white;
 }
-.wrapper{
-    padding-left: 10px;
-}
 .top{
     height: 1%;
     width: 40%;
@@ -19,16 +16,19 @@ p{
     border: 3px solid #3C1E12;
     border-radius: 10px;
     box-sizing: border-box;
+    margin-top: 10px;
 
 }
 #money
 {
-    margin-right: 10%;
+    margin-left: 10px;
+    margin-right: calc(10% - 10px);
     box-shadow: 5px 5px 5px #888888;
 }
 #level
 {
-    margin-left: 10%;
+    margin-right: 10px;
+    margin-left: calc(10% - 10px);
     box-shadow: -5px 5px 5px #888888;
 }
 .name
