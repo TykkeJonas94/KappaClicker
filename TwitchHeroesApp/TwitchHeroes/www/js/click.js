@@ -3,7 +3,7 @@
  */
 
 
-var ClickDamage = 20;
+var ClickDamage = 1;
 var DamagePerSecond = 0;
 
 
@@ -20,6 +20,7 @@ var DamagePerSecond = 0;
             EnemyCounter();
         }
     }, 1000);
+
     $(document).on('click','#enemy',function(){
         CurrentEnemy.health -= ClickDamage;
         if (CurrentEnemy.health <= 0)
@@ -27,7 +28,6 @@ var DamagePerSecond = 0;
             GiveMoney(Math.floor(CurrentEnemy.gold / 3));
             EnemyCounter();
         }
-
 
         function GiveMoney(gold)
         {
@@ -42,8 +42,6 @@ var DamagePerSecond = 0;
             var wh = $(window).height();
             var posx = Math.floor(Math.random() * ww - 20);
             var posy = (wh / 3);
-                console.log("Pos x: " + posx);
-                console.log("Pos y; " + posy);
             ThisTicket.last().css("top", posy + "px").css("left", posx + "px");
             ThisTicket.last()
                 .animate({
