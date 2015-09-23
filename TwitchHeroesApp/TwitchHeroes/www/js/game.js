@@ -2,6 +2,7 @@
  * Created by kenn3898 on 23-09-2015.
  */
 
+var Popup = false;
 var Money = 0;
 var Level = 1;
 var enemyCount = 1;
@@ -11,6 +12,11 @@ var CurrentEnemy = new MakeEnemy(EnemyList[Math.floor(Math.random() * EnemyList.
 
 (function($)
 {
+    $(document).on('click','.dialogPopup', function(){
+        Popup = true;
+    });
+
+
 
     $('#moneyP').text("$ "+ Money);
     $('#levelP').text("Level: "+ Level);

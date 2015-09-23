@@ -102,3 +102,8 @@ p{
     margin-left: 30%;
     right: 10px;
 }
+#menuPopUp a
+{
+    display: block;
+    margin-bottom: 10px;
+}
