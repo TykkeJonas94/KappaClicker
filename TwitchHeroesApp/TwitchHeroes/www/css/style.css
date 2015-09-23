@@ -45,6 +45,12 @@ p{
     margin: 0 auto;
     background-color: saddlebrown;
 }
+#enemyImg{
+    height: 340px;
+    width: 340px;
+    margin:0;
+    padding:0;
+}
 .ticket
 {
     position: absolute;
