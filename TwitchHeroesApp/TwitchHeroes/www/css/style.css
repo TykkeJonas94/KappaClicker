@@ -31,11 +31,11 @@ p{
     margin-left: calc(10% - 10px);
     box-shadow: -5px 5px 5px #888888;
 }
-.name
+.counter
 {
     margin-top: 100px;
 }
-.name p{
+.counter p{
     color:black;
 }
 .enemy
@@ -54,6 +54,9 @@ p{
 .ticket p
 {
     color: blue;
+}
+.name p{
+    color:black
 }
 .health
 {
