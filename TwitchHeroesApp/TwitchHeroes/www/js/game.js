@@ -12,7 +12,7 @@ var CurrentEnemy = new MakeEnemy(EnemyList[Math.floor(Math.random() * EnemyList.
 (function($)
 {
 
-    $('#moneyP').replaceWith("<p id='#moneyP'>"+ Money +"</p>");
+    $('#moneyP').replaceWith("<p id='#moneyP'>$ "+ Money +"</p>");
     $('#enemyImg').replaceWith("<img src='"+ CurrentEnemy.img +"' alt='Enemy' id='enemyImg'>");
 
 })(jQuery);
