@@ -1,0 +1,73 @@
+html, body{
+    margin:0;
+    padding:10px;
+    background-color: #e9eaed;
+}
+p{
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+.money
+{
+    height: 1%;
+    width: 40%;
+    margin-right: 10%;
+    background-color: saddlebrown;
+    float: left;
+}
+.level
+{
+    height: 1%;
+    width: 40%;
+    margin-left: 10%;
+    background-color: saddlebrown;
+    float: left;
+
+}
+.name
+{
+    margin-top: 70px;
+}
+.name p{
+    color:black;
+}
+.enemy
+{
+    height: 300px;
+    width: 60%;
+    margin: 0 auto;
+    background-color: saddlebrown;
+}
+.health
+{
+    height: 25px;
+    width: 60%;
+    margin: 0 auto;
+}
+.healthText{
+    color: black;
+}
+.health div{
+    background-color: red;
+}
+.menu
+{
+    height: 50px;
+    width: 40%;
+    margin-right: 10%;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: green;
+}
+.shop
+{
+    height: 50px;
+    width: 40%;
+    margin-left: 10%;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: green;
+}
