@@ -39,7 +39,30 @@ var image = $('#enemyImg');
     {
        Popup = false;
     });
-
+    $(document).on('click','#SaveGame',function(){
+        console.log("Clicked");
+        Popup = false;
+        window.localStorage.setItem("Contact", JSON.stringify(
+            [
+                {"ClickDamage": ClickDamage},
+                {"DamagePerSecond": DamagePerSecond}
+            ]));
+        var ticket = "<h1 class='SavedGame'> Game Saved! </h1>";
+        $(ticket).appendTo("body");
+        var ThisTicket = $('.SavedGame');
+        var ww = $(window).width();
+        var wh = $(window).height();
+        var posx = Math.floor((ww / 5));
+        var posy = Math.floor((wh / 3));
+        ThisTicket.css("top", posy + "px").css("left", posx + "px");
+        ThisTicket
+            .animate({
+                opacity: 'hide',      // animate fade
+                top: 0        // animation slideUp
+            }, 1500, function () {
+                $(this).remove();
+            });
+    });
 
         // when enemy is clicked
     $(document).on('click','#enemy',function(){

@@ -3,5 +3,5 @@
  */
 
 (function($) {
-    //Kenneth er en faggot!
+    //Kenneth er en king!
 })(jQuery);

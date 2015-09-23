@@ -24,14 +24,12 @@ var CurrentEnemy = new MakeEnemy(EnemyList[Math.floor(Math.random() * EnemyList.
 
     window.UpdateLevel = function(){
         Level++;
-        console.log(Level);
         //$('#levelP').replaceWith("<p id='#levelP'>Level: "+ Level +"</p>");
         $('#levelP').text("Level: "+ Level);
     };
 
     window.UpdateCounter = function(){
         enemyCount++;
-        console.log(enemyCount);
         //$('#counterP').replaceWith("<p id='#counterP'>"+ enemyCount +" / "+ maxEnemy +"</p>");
         $('#counterP').text(enemyCount +" / "+ maxEnemy);
     };
