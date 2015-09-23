@@ -51,21 +51,21 @@ var image = $('#enemyImg');
         }
 
             // creates visual money, that goes up when the enemy dies.
-        function GiveMoney(gold)
-        {
-            for (var i = 0; i < 3; i++)
+            function GiveMoney(gold)
             {
-            // create ticket
-            var ticket="<div class='ticket'><p>+"+ gold +"</p></div>";
-            $(ticket).appendTo("body");
-            var ThisTicket = $('.ticket').last();
-            // get window dimentions
-            var ww = $(window).width();
-            var wh = $(window).height();
-            var posx = Math.floor(Math.random() * ww - 20);
-            var posy = (wh / 3);
-            ThisTicket.last().css("top", posy + "px").css("left", posx + "px");
-            ThisTicket.last()
+                for (var i = 0; i < 3; i++)
+                {
+                // create ticket
+                var ticket="<div class='ticket'><p>+"+ gold +"</p></div>";
+                $(ticket).appendTo("body");
+                var ThisTicket = $('.ticket').last();
+                // get window dimentions
+                var ww = $(window).width();
+                var wh = $(window).height();
+                var posx = Math.floor(Math.random() * ww - 20);
+                var posy = (wh / 3);
+                ThisTicket.last().css("top", posy + "px").css("left", posx + "px");
+                ThisTicket.last()
                 .animate({
                     opacity: 'hide',      // animate fade
                     top: 0        // animation slideUp
