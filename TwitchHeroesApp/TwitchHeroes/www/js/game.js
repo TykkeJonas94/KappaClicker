@@ -30,6 +30,11 @@ var CurrentEnemy = new MakeEnemy(EnemyList[Math.floor(Math.random() * EnemyList.
         $('#counterP').text(enemyCount +" / "+ maxEnemy);
     };
 
+    window.UpdateMoney = function(gold){
+        Money += gold;
+
+        $('#moneyP').text("$ "+ Money);
+    };
 })(jQuery);
 
 function EnemyCounter(){
@@ -40,9 +45,4 @@ function EnemyCounter(){
         enemyCount = 0;
         UpdateLevel();
     }
-}
-
-
-function UpdateGold(){
-
 }
