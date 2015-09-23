@@ -39,10 +39,10 @@ var CurrentEnemy = new MakeEnemy(EnemyList[Math.floor(Math.random() * EnemyList.
 
 function EnemyCounter(){
 
-    CurrentEnemy = new MakeEnemy(EnemyList[Math.floor(Math.random() * EnemyList.length)], Level * 10, Level * 200);
     jQuery('#HealthBar').css('width',"100%");
     if(enemyCount >= maxEnemy){
         enemyCount = 0;
         UpdateLevel();
     }
+    CurrentEnemy = new MakeEnemy(EnemyList[Math.floor(Math.random() * EnemyList.length)], Level * 10, Level * 200);
 }
