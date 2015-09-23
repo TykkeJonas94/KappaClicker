@@ -1,6 +1,6 @@
 .ClickAnimation:active
 {
-    animation-name: Click;
+    animation-name: click;
     animation-duration: 0.5s;
 }
 @keyframes click {

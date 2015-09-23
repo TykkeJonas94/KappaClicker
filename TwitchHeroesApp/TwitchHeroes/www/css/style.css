@@ -49,6 +49,8 @@ p{
     height: 100%;
     width: 100%;
     padding:0;
+    max-width: 360px;
+    max-height: 360px;
 }
 .ticket
 {
