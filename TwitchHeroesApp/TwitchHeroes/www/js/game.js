@@ -11,14 +11,12 @@ var CurrentEnemy = new MakeEnemy(EnemyList[Math.floor(Math.random() * EnemyList.
 
 (function($)
 {
-    $('#enemyImg').replaceWith("<img src='"+ CurrentEnemy.img +"' id='enemy' class='enemy'>");
+   $('#enemyImg').replaceWith("<img src='"+ CurrentEnemy.img +"' alt='Enemy' id='enemyImg'>");
 })(jQuery);
 
     function EnemyCounter(){
 
         CurrentEnemy = new MakeEnemy(EnemyList[Math.floor(Math.random() * EnemyList.length)], Level * 10, Level * 200);
-        console.log(CurrentEnemy);
-        jQuery.('#enemy').replaceWith("<img src='"+ CurrentEnemy.img +"' id='enemy' class='enemy'>");
         currentEnemy++;
 
         if(currentEnemy >= maxEnemy){
