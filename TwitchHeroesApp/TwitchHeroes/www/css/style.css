@@ -45,6 +45,16 @@ p{
     margin: 0 auto;
     background-color: saddlebrown;
 }
+.ticket
+{
+    position: absolute;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.ticket p
+{
+    color: blue;
+}
 .health
 {
     height: 25px;

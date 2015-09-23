@@ -4,18 +4,50 @@
 
 var Money = 0;
 
-var ClickDamage = 1;
+var ClickDamage = 20;
 var DamagePerSecond = 0;
-var EnemyHealth;
 
 
-var CurrentEnemy = new MakeEnemy(EnemyList[Math.floor(Math.random() * EnemyList.length)], 100, 2000);
+var CurrentEnemy = new MakeEnemy(EnemyList[Math.floor(Math.random() * EnemyList.length)], Level * 10, Level * 200);
 
 
 (function($){
     console.log(CurrentEnemy);
     $(document).on('click','#enemy',function(){
-        EnemyHealth -= ClickDamage;
+        CurrentEnemy.health -= ClickDamage;
+        if (CurrentEnemy.health <= 0)
+        {
+            GiveMoney(Math.floor(CurrentEnemy.gold / 3));
+            CurrentEnemy = new MakeEnemy(EnemyList[Math.floor(Math.random() * EnemyList.length)], Level * 10, Level * 200);
+        }
+
+        function GiveMoney(gold)
+        {
+            for (var i = 0; i < 3; i++)
+            {
+            // create ticket
+            var ticket="<div class='ticket'><p>+"+ gold +"</p></div>";
+            $(ticket).appendTo("body");
+            var ThisTicket = $('.ticket').last();
+            // get window dimentions
+            var ww = $(window).width();
+            var wh = $(window).height();
+            var posx = Math.floor(Math.random() * ww - 20);
+            var posy = (wh / 3);
+                console.log("Pos x: " + posx);
+                console.log("Pos y; " + posy);
+            ThisTicket.last().css("top", posy + "px").css("left", posx + "px");
+            ThisTicket.last()
+                .animate({
+                    opacity: 'hide',      // animate fade
+                    top: 0        // animation slideUp
+                }, 1500, function() {
+                    $(this).remove();
+                });
+            }
+        }
     });
+
+
 
 })(jQuery);
