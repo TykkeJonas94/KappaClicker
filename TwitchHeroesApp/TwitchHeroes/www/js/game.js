@@ -13,13 +13,8 @@ var CurrentEnemy = new MakeEnemy(EnemyList[Math.floor(Math.random() * EnemyList.
 {
 
     $('#moneyP').replaceWith("<p id='#moneyP'>$ "+ Money +"</p>");
-<<<<<<< HEAD
     $('#levelP').replaceWith("<p id='#levelP'>Level: "+ Level +"</p>");
     $('#counterP').replaceWith("<p id='#counterP'>"+ enemyCount +" / "+ maxEnemy +"</p>");
-=======
-    //$('#levelP').replaceWith("<p id='#levelP'>Level: "+ Level +"</p>");
-    //$('#counterP').replaceWith("<p id='#counterP'>"+ enemyCounter +"</p>");
->>>>>>> origin/master
 
     window.UpdateLevel = function(){
         Level++;
