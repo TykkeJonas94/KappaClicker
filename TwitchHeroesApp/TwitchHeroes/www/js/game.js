@@ -31,7 +31,7 @@ var CurrentEnemy = new MakeEnemy(EnemyList[Math.floor(Math.random() * EnemyList.
     };
 
     window.UpdateMoney = function(gold){
-        Money = gold;
+        Money += gold;
 
         $('#moneyP').text("$ "+ Money);
     }
