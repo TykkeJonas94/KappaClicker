@@ -78,7 +78,7 @@ p{
     background-color: red;
 }
 .HealthBar {
-    width: 90%;
+    width: 100%;
 }
 #HealthBarWrapper
 {
