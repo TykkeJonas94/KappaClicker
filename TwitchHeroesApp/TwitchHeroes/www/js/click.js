@@ -2,7 +2,7 @@
  * Created by kenn3898 on 23-09-2015.
  */
 var ClickDamage = 1;
-var DamagePerSecond = 12.5;
+var DamagePerSecond = 5;
 
 
 (function($){

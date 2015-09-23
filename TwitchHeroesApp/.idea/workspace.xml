@@ -59,8 +59,8 @@
       <file leaf-file-name="click.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/TwitchHeroes/www/js/click.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.20543478">
-              <caret line="43" column="27" selection-start-line="43" selection-start-column="27" selection-end-line="43" selection-end-column="27" />
+            <state vertical-scroll-proportion="0.7782609">
+              <caret line="75" column="19" selection-start-line="75" selection-start-column="8" selection-end-line="75" selection-end-column="19" />
               <folding>
                 <element signature="e#0#45#0" expanded="false" />
               </folding>
@@ -351,7 +351,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -612,8 +612,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/TwitchHeroes/www/js/click.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.20543478">
-          <caret line="43" column="27" selection-start-line="43" selection-start-column="27" selection-end-line="43" selection-end-column="27" />
+        <state vertical-scroll-proportion="0.7782609">
+          <caret line="75" column="19" selection-start-line="75" selection-start-column="8" selection-end-line="75" selection-end-column="19" />
           <folding>
             <element signature="e#0#45#0" expanded="false" />
           </folding>
