@@ -57,7 +57,7 @@ p{
 .bottom{
     height: 50px;
     width: 20%;
-    positiol: absolute;
+    position: absolute;
     background-color: green;
     bottom: 10px;
 }
