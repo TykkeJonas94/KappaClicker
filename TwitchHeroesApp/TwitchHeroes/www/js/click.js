@@ -2,24 +2,32 @@
  * Created by kenn3898 on 23-09-2015.
  */
 
-var Money = 0;
 
 var ClickDamage = 20;
 var DamagePerSecond = 0;
 
 
-var CurrentEnemy = new MakeEnemy(EnemyList[Math.floor(Math.random() * EnemyList.length)], Level * 10, Level * 200);
+
 
 
 (function($){
-    console.log(CurrentEnemy);
+
+    setInterval(function(){
+        CurrentEnemy.health -= DamagePerSecond;
+        if (CurrentEnemy.health <= 0)
+        {
+            GiveMoney(Math.floor(CurrentEnemy.gold / 3));
+            EnemyCounter();
+        }
+    }, 1000);
     $(document).on('click','#enemy',function(){
         CurrentEnemy.health -= ClickDamage;
         if (CurrentEnemy.health <= 0)
         {
             GiveMoney(Math.floor(CurrentEnemy.gold / 3));
-            CurrentEnemy = new MakeEnemy(EnemyList[Math.floor(Math.random() * EnemyList.length)], Level * 10, Level * 200);
+            EnemyCounter();
         }
+
 
         function GiveMoney(gold)
         {
