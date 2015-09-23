@@ -4,7 +4,7 @@
 
 var Money = 0;
 var Level = 1;
-var enemyCount = 0;
+var enemyCount = 1;
 var maxEnemy = 10;
 var CurrentEnemy = new MakeEnemy(EnemyList[Math.floor(Math.random() * EnemyList.length)], Level * 10, Level * 200);
 
@@ -12,9 +12,9 @@ var CurrentEnemy = new MakeEnemy(EnemyList[Math.floor(Math.random() * EnemyList.
 (function($)
 {
 
-    $('#moneyP').replaceWith("<p id='#moneyP'>$ "+ Money +"</p>");
-    $('#levelP').replaceWith("<p id='#levelP'>Level: "+ Level +"</p>");
-    $('#counterP').replaceWith("<p id='#counterP'>"+ enemyCount +" / "+ maxEnemy +"</p>");
+    $('#moneyP').text("$ "+ Money);
+    $('#levelP').text("Level: "+ Level);
+    $('#counterP').text(enemyCount +" / "+ maxEnemy);
 
     window.UpdateLevel = function(){
         Level++;
@@ -37,6 +37,7 @@ function EnemyCounter(){
     CurrentEnemy = new MakeEnemy(EnemyList[Math.floor(Math.random() * EnemyList.length)], Level * 10, Level * 200);
     jQuery('#HealthBar').css('width',"100%");
     if(enemyCount >= maxEnemy){
+        enemyCount = 0;
         UpdateLevel();
     }
 }
