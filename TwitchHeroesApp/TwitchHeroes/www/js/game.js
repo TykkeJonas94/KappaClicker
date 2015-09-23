@@ -34,7 +34,7 @@ var CurrentEnemy = new MakeEnemy(EnemyList[Math.floor(Math.random() * EnemyList.
         Money += gold;
 
         $('#moneyP').text("$ "+ Money);
-    }
+    };
 })(jQuery);
 
 function EnemyCounter(){
