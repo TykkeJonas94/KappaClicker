@@ -2,11 +2,12 @@
  * Created by kenn3898 on 23-09-2015.
  */
 
-var EnemyList = [1,2,3,4,5,5];
+var EnemyList = [{name:"BibleThump",url:"img/enemy/BibleThump.png"}, {name:"Brain Slug",img:"img/enemy/BrainSlug.png"},{name:"Kappa",img:"img/enemy/Kappa.png"}];
 
-function MakeEnemy(name,health,gold)
+function MakeEnemy(object,health,gold)
 {
-    this.name = name;
+    this.name = object.name;
+    this.img = object.url;
     this.health = health;
     this.gold = gold;
 }
