@@ -15,7 +15,6 @@ var CurrentEnemy = new MakeEnemy(EnemyList[Math.floor(Math.random() * EnemyList.
     $('#moneyP').replaceWith("<p id='#moneyP'>$ "+ Money +"</p>");
     //$('#levelP').replaceWith("<p id='#levelP'>Level: "+ Level +"</p>");
     //$('#counterP').replaceWith("<p id='#counterP'>"+ enemyCounter +"</p>");
-    $('#enemyImg').replaceWith("<img src='"+ CurrentEnemy.img +"' alt='Enemy' id='enemyImg' class='ClickAnimation'>");
 
     window.UpdateLevel = function(){
         Level++;
