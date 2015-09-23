@@ -12,19 +12,26 @@ var DamagePerSecond = 0;
 
 (function($){
 
+
     setInterval(function(){
         CurrentEnemy.health -= DamagePerSecond;
+
+        $('#HealthBar').css("border-right = " + CurrentEnemy.health / CurrentEnemy.MaxHealth +"px");
+
         if (CurrentEnemy.health <= 0)
         {
             GiveMoney(Math.floor(CurrentEnemy.gold / 3));
             EnemyCounter();
+            UpdateCounter();
         }
     }, 1000);
 
     $(document).on('click','#enemy',function(){
         CurrentEnemy.health -= ClickDamage;
+        $('#HealthBar').css("width", ((CurrentEnemy.health / CurrentEnemy.MaxHealth) * (document.getElementById('HealthBar').offsetWidth))  + "px");
         if (CurrentEnemy.health <= 0)
         {
+
             GiveMoney(Math.floor(CurrentEnemy.gold / 3));
             EnemyCounter();
         }

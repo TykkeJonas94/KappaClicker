@@ -41,7 +41,7 @@ p{
 .enemy
 {
     height: 300px;
-    width: 65%;
+    width: 80%;
     margin: 0 auto;
     background-color: saddlebrown;
 }
@@ -76,6 +76,15 @@ p{
 }
 .health div{
     background-color: red;
+}
+.HealthBar {
+    width: 90%;
+}
+#HealthBarWrapper
+{
+    height: 100%;
+    width: 100%;
+    border: 3px solid black;
 }
 .bottom{
     height: 50px;

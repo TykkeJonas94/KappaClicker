@@ -8,6 +8,7 @@ function MakeEnemy(object,health,gold)
 {
     this.name = object.name;
     this.img = object.url;
+    this.MaxHealth = health;
     this.health = health;
     this.gold = gold;
 }
