@@ -11,8 +11,6 @@ var CurrentEnemy = new MakeEnemy(EnemyList[Math.floor(Math.random() * EnemyList.
 
 
 
-(function($){
-
     function EnemyCounter(){
         CurrentEnemy = new MakeEnemy(EnemyList[Math.floor(Math.random() * EnemyList.length)], Level * 10, Level * 200);
         currentEnemy++;
@@ -21,4 +19,4 @@ var CurrentEnemy = new MakeEnemy(EnemyList[Math.floor(Math.random() * EnemyList.
             Level++;
         }
     }
-})(jQuery);
+
