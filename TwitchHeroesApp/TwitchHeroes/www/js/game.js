@@ -11,21 +11,23 @@ var CurrentEnemy = new MakeEnemy(EnemyList[Math.floor(Math.random() * EnemyList.
 
 (function($)
 {
+
     $('#moneyP').replaceWith("<p id='#moneyP'>$ "+ Money +"</p>");
-    //$('#levelP').replaceWith("<p id='#levelP'>Level: "+ Level +"</p>");
-    //$('#counterP').replaceWith("<p id='#counterP'>"+ enemyCounter +"</p>");
-    $('#enemyImg').replaceWith("<img src='"+ CurrentEnemy.img +"' alt='Enemy' id='enemyImg' class='ClickAnimation'>");
+    $('#levelP').replaceWith("<p id='#levelP'>Level: "+ Level +"</p>");
+    $('#counterP').replaceWith("<p id='#counterP'>"+ enemyCount +" / "+ maxEnemy +"</p>");
 
     window.UpdateLevel = function(){
         Level++;
         console.log(Level);
-        $('#levelP').replaceWith("<p id='#levelP'>Level: "+ Level +"</p>");
+        //$('#levelP').replaceWith("<p id='#levelP'>Level: "+ Level +"</p>");
+        $('#levelP').text("Level: "+ Level);
     };
 
     window.UpdateCounter = function(){
         enemyCount++;
         console.log(enemyCount);
-        $('#counterP').replaceWith("<p id='#counterP'>"+ enemyCount +" / "+ maxEnemy +"</p>");
+        //$('#counterP').replaceWith("<p id='#counterP'>"+ enemyCount +" / "+ maxEnemy +"</p>");
+        $('#counterP').text(enemyCount +" / "+ maxEnemy);
     };
 
 })(jQuery);
