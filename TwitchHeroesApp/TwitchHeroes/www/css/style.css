@@ -8,26 +8,29 @@ p{
     font-weight: bold;
     color: white;
 }
-.money
-{
+.top{
     height: 1%;
     width: 40%;
-    margin-right: 10%;
     background-color: saddlebrown;
     float: left;
-}
-.level
-{
-    height: 1%;
-    width: 40%;
-    margin-left: 10%;
-    background-color: saddlebrown;
-    float: left;
+    border: 3px solid #3C1E12;
+    border-radius: 10px;
+    box-sizing: border-box;
 
+}
+#money
+{
+    margin-right: 10%;
+    box-shadow: 5px 5px 5px #888888;
+}
+#level
+{
+    margin-left: 10%;
+    box-shadow: -5px 5px 5px #888888;
 }
 .name
 {
-    margin-top: 70px;
+    margin-top: 100px;
 }
 .name p{
     color:black;
@@ -51,23 +54,20 @@ p{
 .health div{
     background-color: red;
 }
-.menu
-{
+.bottom{
     height: 50px;
-    width: 40%;
-    margin-right: 10%;
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
+    width: 20%;
+    positiol: absolute;
     background-color: green;
+    bottom: 10px;
 }
-.shop
+#menu
 {
-    height: 50px;
-    width: 40%;
-    margin-left: 10%;
-    position: absolute;
-    bottom: 10px;
+    margin-right: 30%;
+    left: 10px;
+}
+#shop
+{
+    margin-left: 30%;
     right: 10px;
-    background-color: green;
 }
