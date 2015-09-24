@@ -12,9 +12,6 @@ var CurrentEnemy = new MakeEnemy(EnemyList[Math.floor(Math.random() * EnemyList.
 
 (function($)
 {
-    $(document).on('click','.dialogPopup', function(){
-        Popup = true;
-    });
 
 
 
