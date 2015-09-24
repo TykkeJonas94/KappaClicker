@@ -1,6 +1,6 @@
 html, body{
     margin:0;
-    padding:10px;
+    padding:0;
     background-color: #e9eaed;
 }
 p{
@@ -8,36 +8,61 @@ p{
     font-weight: bold;
     color: white;
 }
-.money
-{
+.top{
     height: 1%;
     width: 40%;
-    margin-right: 10%;
     background-color: saddlebrown;
     float: left;
-}
-.level
-{
-    height: 1%;
-    width: 40%;
-    margin-left: 10%;
-    background-color: saddlebrown;
-    float: left;
+    border: 3px solid #3C1E12;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-top: 10px;
 
 }
-.name
+#money
 {
-    margin-top: 70px;
+    margin-left: 10px;
+    margin-right: calc(10% - 10px);
+    box-shadow: 5px 5px 5px #888888;
 }
-.name p{
+#level
+{
+    margin-right: 10px;
+    margin-left: calc(10% - 10px);
+    box-shadow: -5px 5px 5px #888888;
+}
+.counter
+{
+    margin-top: 100px;
+}
+.counter p{
     color:black;
 }
 .enemy
 {
     height: 300px;
-    width: 60%;
+    width: 80%;
     margin: 0 auto;
-    background-color: saddlebrown;
+}
+#enemyImg{
+    height: 100%;
+    width: 100%;
+    padding:0;
+    max-width: 360px;
+    max-height: 360px;
+}
+.ticket
+{
+    position: absolute;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.ticket p
+{
+    color: blue;
+}
+.name p{
+    color:black
 }
 .health
 {
@@ -51,23 +76,73 @@ p{
 .health div{
     background-color: red;
 }
-.menu
-{
-    height: 50px;
-    width: 40%;
-    margin-right: 10%;
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    background-color: green;
+.HealthBar {
+    width: 100%;
 }
-.shop
+#HealthBarWrapper
 {
+    height: 100%;
+    width: 100%;
+    border: 3px solid black;
+}
+.bottom{
     height: 50px;
-    width: 40%;
-    margin-left: 10%;
+    width: 20%;
     position: absolute;
-    bottom: 10px;
-    right: 10px;
     background-color: green;
+    bottom: 10px;
+}
+#menu
+{
+    margin-right: 30%;
+    left: 10px;
+}
+#shop
+{
+    margin-left: 30%;
+    right: 10px;
+}
+.upgradeList{
+    width:100%;
+    height:100%;
+    margin: 0;
+    padding: 0;
+}
+.listHead{
+    border-bottom: 1px solid black;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.listItem{
+    list-style-type: none;
+    float: left;
+    width: calc(100% / 3);
+    text-align: center;
+}
+#menuPopUp a
+{
+    display: block;
+    margin-bottom: 10px;
+}
+.SavedGame
+{
+    position: absolute;
+    font-weight: bold;
+    color: black;
+}
+.ui-header .ui-title, .ui-footer .ui-title {
+    font-size: 1.4em;
+}
+.MenuFooter
+{
+    color: black;
+}
+.Black
+{
+    color: black;
+}
+#Resetme
+{
+    margin-left: 40%;
 }
