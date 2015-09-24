@@ -2,17 +2,21 @@
  * Created by jona796m on 23-09-2015.
  */
 
-<<<<<<< HEAD
-var UpgradeList = [{upgName:"FailFish", upgPrice:"1337", upgEffectName:"+10 Damage per second", upgEffect:"10"}];
+/**Upgrade Effect Value 0 = +damagePerClick */
+/**Upgrade Effect Value 1 = +damagePerSecond */
 
-function upgrade(upgName, upgPrice, upgEffectName, upgEffect){
+var UpgradeList = [ {upgName:"upgrade1", upgPrice:10, upgEffectName:"+1 Damage per Click", upgEffectValue:0, upgEffect:1},
+                    {upgName:"upgrade2", upgPrice:40, upgEffectName:"+1 Damage per Second", upgEffectValue:1, upgEffect:1}
+];
+
+function upgrade(upgName, upgPrice, upgEffectName, upgEffectValue, upgEffect){
     this.upgName = upgName;
     this.upgPrice = upgPrice;
     this.upgEffectName = upgEffectName;
+    this.upgEffectValue = upgEffectValue;
     this.upgEffect = upgEffect;
 }
-=======
+
 (function($) {
-    //Kenneth er en king!
+
 })(jQuery);
->>>>>>> origin/master
