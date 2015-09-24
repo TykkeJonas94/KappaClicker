@@ -13,8 +13,6 @@ var CurrentEnemy = new MakeEnemy(EnemyList[Math.floor(Math.random() * EnemyList.
 (function($)
 {
 
-
-
     $('#moneyP').text("$ "+ Money);
     $('#levelP').text("Level: "+ Level);
     $('#counterP').text(enemyCount +" / "+ maxEnemy);
