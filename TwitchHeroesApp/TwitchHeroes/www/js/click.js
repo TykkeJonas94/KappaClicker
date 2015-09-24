@@ -4,9 +4,7 @@
 var ClickDamage = 1;
 var DamagePerSecond = 5;
 
-
 (function($){
-
 var HealthBar = $('#HealthBar');
 var HealthText = $('#healthText');
 var EnemyName = $('#nameP');
@@ -31,43 +29,10 @@ var image = $('#enemyImg');
         }
     }, 200);
 
-    $(document).on('click','.ui-btn',function(){
-        Popup = false;
-    });
-
-    $(document).on('click','.back',function()
-    {
-       Popup = false;
-    });
-    $(document).on('click','#SaveGame',function(){
-        console.log("Clicked");
-        Popup = false;
-        window.localStorage.setItem("Contact", JSON.stringify(
-            [
-                {"ClickDamage": ClickDamage},
-                {"DamagePerSecond": DamagePerSecond}
-            ]));
-        var ticket = "<h1 class='SavedGame'> Game Saved! </h1>";
-        $(ticket).appendTo("body");
-        var ThisTicket = $('.SavedGame');
-        var ww = $(window).width();
-        var wh = $(window).height();
-        var posx = Math.floor((ww / 5));
-        var posy = Math.floor((wh / 3));
-        ThisTicket.css("top", posy + "px").css("left", posx + "px");
-        ThisTicket
-            .animate({
-                opacity: 'hide',      // animate fade
-                top: 0        // animation slideUp
-            }, 1500, function () {
-                $(this).remove();
-            });
-    });
 
         // when enemy is clicked
     $(document).on('click','#enemy',function(){
         CurrentEnemy.health -= ClickDamage;
-
         $(HealthText).text(CurrentEnemy.health + " HP");
         $(HealthBar).css("width", (CurrentEnemy.health / CurrentEnemy.MaxHealth) * 100 + "%");
         if (CurrentEnemy.health <= 0)
@@ -78,12 +43,10 @@ var image = $('#enemyImg');
             $(HealthBar).css("width","100%");
             $(EnemyName).text(CurrentEnemy.name);
             $(image).attr("src",CurrentEnemy.img);
-
-
         }
     });
-    // creates visual money, that goes up when the enemy dies.
 
+    // creates visual money, that goes up when the enemy dies.
     function GiveMoney(gold)
     {
         if (Popup == false) {
@@ -109,7 +72,4 @@ var image = $('#enemyImg');
         }
         UpdateMoney(gold * 3);
     }
-
-
-
 })(jQuery);

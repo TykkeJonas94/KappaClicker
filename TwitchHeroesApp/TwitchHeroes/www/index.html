@@ -45,9 +45,8 @@
         <meta name="format-detection" content="telephone=no">
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-        <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="stylesheet" type="text/css" href="css/keyframes.css">
-
+        <link rel="stylesheet" type="text/css" href="css/style.css">
         <title>Twitch Heroes</title>
     </head>
     <body>
@@ -92,6 +91,8 @@
         </a>
      </div>
 
+
+                <!-- Menu -->
         <div data-role="page" data-dialog="true"  id="menuPopUp">
             <div data-role="header">
             <h1>Menu</h1>
@@ -100,25 +101,63 @@
         <div data-role="main" class="ui-content">
             <div class="CenterPopup">
                 <a href="#pageOne"  id="SaveGame">Save</a>
-                <a href="#Contact">Contact</a>
-                <a href="#Reset">Reset Everything</a>
+                <a href="#Contact" class="plus">Contact</a>
+                <a href="#Reset" class="plus">Reset Everything</a>
                 <a href="#pageOne" class="back">Back</a>
             </div>
         </div>
-
-
             <div data-role="footer">
-                <h1> Footer </h1>
+                <p class="MenuFooter">&copy; Kenneth & Jonas </p>
             </div>
         </div>
 
 
-        <!-- Include the jQuery library -->
+    <!-- #Contact Menu -->
+    <div data-role="page" data-dialog="true" id="Contact">
+        <div data-role="header" class="popup-header">
+            <h1>Menu</h1>
+        </div>
+
+        <div data-role="main" class="ui-content">
+            <form action="#pageone" id="contactform">
+                <input name="name" id="contactName" placeholder="Name"><br>
+                <input name="email" id="contactEmail" placeholder="Email"><br>
+                <textarea name="comment" id="contactComment" placeholder="Comment"></textarea>
+                <input type="submit" id="SubmitContact" name="SubmitContact" value="Contact Me">
+            </form>
+        </div>
+        <div data-role="footer" class="popup-footer">
+            <p>&copy; Kenneth & Jonas</p>
+        </div>
+    </div>
+
+
+    <!-- Popup reset -->
+    <div data-role="page" data-dialog="true" id="Reset">
+        <div data-role="header" class="popup-header">
+            <h1>Menu</h1>
+        </div>
+
+        <div data-role="main" class="ui-content">
+            <p class="Black">Are you sure that you want to reset EVERYTHING? <br>
+                You will have to start from scratch if you choose to do so. <br>
+            </p>
+            <a href="#pageOne" id="Resetme">Reset</a>
+        </div>
+        <div data-role="footer" class="popup-footer">
+            <p class="MenuFooter">&copy; Kenneth & Jonas</p>
+        </div>
+    </div>
+
+
+
+    <!-- Include the jQuery library -->
         <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
         <!-- Bootstrap -->
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
         <!-- Include the jQuery Mobile library -->
         <script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+        <script type="text/javascript" src="js/menu.js"></script>
         <script type="text/javascript" src="js/upgrade.js"></script>
         <script type="text/javascript" src="js/class.js"></script>
         <script type="text/javascript" src="js/game.js"></script>
