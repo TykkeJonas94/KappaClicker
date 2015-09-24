@@ -17,6 +17,7 @@ function upgrade(upgName, upgPrice, upgEffectName, upgEffectValue, upgEffect){
     this.upgEffect = upgEffect;
 }
 
-(function($) {
+function printUpgrades(){
+    alert("Kenneth er en taber!");
+}
 
-})(jQuery);
