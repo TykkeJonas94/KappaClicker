@@ -107,3 +107,9 @@ p{
     display: block;
     margin-bottom: 10px;
 }
+.SavedGame
+{
+    position: absolute;
+    font-weight: bold;
+    color: black;
+}
