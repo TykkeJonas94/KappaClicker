@@ -17,7 +17,9 @@ function upgrade(upgName, upgPrice, upgEffectName, upgEffectValue, upgEffect){
     this.upgEffect = upgEffect;
 }
 
-function printUpgrades(){
-    alert("Kenneth er en taber!");
-}
+$(document).on('click','#shop',function(){
+    for(var i = 0; i < UpgradeList.length; i++){
+        console.log(UpgradeList[i].upgName);
+    }
+});
 
