@@ -7,5 +7,5 @@ if (localStorage.getItem("GameSave") != null)
     console.log("----------------------Save Loaded -------------------------------------");
     console.log("ClickDamage: " + save[0].ClickDamage);
     console.log("DamagePerSecond: " + save[1].DamagePerSecond);
-    console.log("----------------------Save Done -------------------------------------");
+    console.log("----------------------Save Done ---------------------------------------");
 }
