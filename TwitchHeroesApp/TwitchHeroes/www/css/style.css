@@ -102,6 +102,24 @@ p{
     margin-left: 30%;
     right: 10px;
 }
+.upgradeList{
+    width:100%;
+    height:100%;
+    margin: 0;
+    padding: 0;
+}
+.listHead{
+    border-bottom: 1px solid black;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.listItem{
+    list-style-type: none;
+    float: left;
+    width: calc(100% / 3);
+    text-align: center;
+}
 #menuPopUp a
 {
     display: block;
