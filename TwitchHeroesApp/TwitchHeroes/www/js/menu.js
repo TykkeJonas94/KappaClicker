@@ -6,7 +6,6 @@ var CanGoTrue = 0;
 
 
 $(document).on('click','.dialogPopup', function(){
-    console.log("setting popup to true");
     Popup = true;
 });
 
@@ -85,11 +84,27 @@ $(document).on('click','#Resetme',function(){
 
     window.localStorage.removeItem("Contact");
     Popup = false;
-    Write("Reset", 20);
+    Write("Reset", 16);
 });
 
 
 
-$(document).on('click','#SubmitContact',function(){
-    
+$("#contactform").submit(function(event){
+    var contactname = $('#contactName').val();
+    var contactemail = $('#contactEmail').val();
+    var contactcomment = $('#contactComment').val();
+
+    if(contactname.length > 2)
+    {
+        if (contactemail.length > 12)
+        {
+            window.localStorage.setItem("Contact", JSON.stringify(
+                [
+                    {"name": contactname},
+                    {"email": contactemail},
+                    {"comment": contactcomment}
+                ]
+            ));
+        }
+    }
 });
