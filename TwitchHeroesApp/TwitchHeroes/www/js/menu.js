@@ -28,7 +28,7 @@ function Write(text, margin)
     {
         ThisTicket.css("top", posy + "px").css("left", posx + "px");
     }
-
+    // animate ticket to go up and fade
     ThisTicket
         .animate({
             opacity: 'hide',      // animate fade
@@ -41,7 +41,6 @@ function Write(text, margin)
 
 // save game
 $(document).on('click','#SaveGame',function(){
-    console.log("Clicked");
     Popup = false;
     window.localStorage.setItem("GameSave", JSON.stringify(
         [
@@ -56,14 +55,12 @@ $(document).on('click','#SaveGame',function(){
 
 
 $(document).on('click','.ui-btn',function(){
-    console.log("CanGoTrue = " + CanGoTrue);
     if (CanGoTrue == 0) {
         Popup = false;
     }
     else
     {
         CanGoTrue--;
-        console.log("CanGoTrue- : " + CanGoTrue);
     }
 });
 
