@@ -45,7 +45,10 @@ $(document).on('click','#SaveGame',function(){
     window.localStorage.setItem("GameSave", JSON.stringify(
         [
             {"ClickDamage": ClickDamage},
-            {"DamagePerSecond": DamagePerSecond}
+            {"DamagePerSecond": DamagePerSecond},
+            {"Money": Money},
+            {"Level": Level},
+            {"enemyCount": enemyCount}
         ]));
 
     Write("Saved Game!",0);
@@ -79,7 +82,8 @@ $(document).on('click','.plus',function(){
 
 $(document).on('click','#Resetme',function(){
 
-    window.localStorage.removeItem("Contact");
+
+    window.localStorage.removeItem("GameSave");
     Popup = false;
     Write("Reset", 16);
 });

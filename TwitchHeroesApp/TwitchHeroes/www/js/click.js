@@ -16,11 +16,11 @@ var image = $('#enemyImg');
     // DamagePerSecond function runs every 0.2 second
     setInterval(function(){
         CurrentEnemy.health -= DamagePerSecond / 5;
-        $(HealthText).text(CurrentEnemy.health + " HP");
+        $(HealthText).text(CurrentEnemy.health.toFixed(0) + " HP");
         $(HealthBar).css("width", (CurrentEnemy.health / CurrentEnemy.MaxHealth) * 100 + "%");
         if (CurrentEnemy.health <= 0)
         {
-            GiveMoney(Math.floor(CurrentEnemy.gold / 3));
+            GiveMoney(Math.floor(CurrentEnemy.gold));
             EnemyCounter();
             UpdateCounter();
             $(HealthBar).css("width","100%");
@@ -33,11 +33,11 @@ var image = $('#enemyImg');
         // when enemy is clicked
     $(document).on('click','#enemy',function(){
         CurrentEnemy.health -= ClickDamage;
-        $(HealthText).text(CurrentEnemy.health + " HP");
+        $(HealthText).text(CurrentEnemy.health.toFixed(0) + " HP");
         $(HealthBar).css("width", (CurrentEnemy.health / CurrentEnemy.MaxHealth) * 100 + "%");
         if (CurrentEnemy.health <= 0)
         {
-            GiveMoney(Math.floor(CurrentEnemy.gold / 3));
+            GiveMoney(Math.floor(CurrentEnemy.gold));
             EnemyCounter();
             UpdateCounter();
             $(HealthBar).css("width","100%");
@@ -50,26 +50,24 @@ var image = $('#enemyImg');
     function GiveMoney(gold)
     {
         if (Popup == false) {
-            for (var i = 0; i < 3; i++) {
-                // create ticket
-                var ticket = "<div class='ticket'><p>+" + gold + "</p></div>";
-                $(ticket).appendTo("body");
-                var ThisTicket = $('.ticket').last();
-                // get window dimentions
-                var ww = $(window).width();
-                var wh = $(window).height();
-                var posx = Math.floor(Math.random() * ww - 20);
-                var posy = (wh / 3);
-                ThisTicket.last().css("top", posy + "px").css("left", posx + "px");
-                ThisTicket.last()
-                    .animate({
-                        opacity: 'hide',      // animate fade
-                        top: 0        // animation slideUp
-                    }, 1500, function () {
-                        $(this).remove();
-                    });
-            }
-        }
-        UpdateMoney(gold * 3);
+            // create ticket
+            var ticket = "<div class='ticket'><h1>+" + gold + "</h1></div>";
+            $(ticket).appendTo("body");
+            var ThisTicket = $('.ticket').last();
+            // get window dimentions
+            var ww = $(window).width();
+            var wh = $(window).height();
+            var posx = Math.floor(Math.random() * ww - 20);
+            var posy = (wh / 3);
+            ThisTicket.last().css("top", posy + "px").css("left", posx + "px");
+            ThisTicket.last()
+                .animate({
+                    opacity: 'hide',      // animate fade
+                    top: 0        // animation slideUp
+                }, 1500, function () {
+                    $(this).remove();
+                });
+             }
+        UpdateMoney(gold);
     }
 })(jQuery);
