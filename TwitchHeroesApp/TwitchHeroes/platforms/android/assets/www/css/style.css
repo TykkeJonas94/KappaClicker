@@ -1,0 +1,173 @@
+html, body{
+    margin:0;
+    padding:0;
+    background-color: #e9eaed;
+}
+p{
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+.top{
+    height: 1%;
+    width: 40%;
+    background-color: saddlebrown;
+    float: left;
+    border: 3px solid #3C1E12;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-top: 10px;
+
+}
+#money
+{
+    margin-left: 10px;
+    margin-right: calc(10% - 10px);
+    box-shadow: 5px 5px 5px #888888;
+}
+#level
+{
+    margin-right: 10px;
+    margin-left: calc(10% - 10px);
+    box-shadow: -5px 5px 5px #888888;
+}
+.counter
+{
+    margin-top: 100px;
+}
+.counter p{
+    color:black;
+}
+.enemy
+{
+    height: 300px;
+    width: 80%;
+    margin: 0 auto;
+}
+#enemyImg{
+    height: 100%;
+    width: 100%;
+    padding:0;
+    max-width: 360px;
+    max-height: 360px;
+}
+.ticket
+{
+    position: absolute;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.ticket p
+{
+    color: blue;
+}
+.name p{
+    color:black
+}
+.health
+{
+    height: 25px;
+    width: 60%;
+    margin: 0 auto;
+}
+.healthText{
+    color: black;
+}
+.health div{
+    background-color: red;
+}
+.HealthBar {
+    width: 100%;
+}
+#HealthBarWrapper
+{
+    height: 100%;
+    width: 100%;
+    border: 3px solid black;
+}
+.bottom{
+  /*  height: 50px;
+    width: 20%;
+    position: absolute;
+    background-color: green;
+    bottom: 10px;
+    box-shadow: 2px 1px 1px #888888; */
+
+    width: 100px;
+    height: 50px;
+    border: 1px #000000 solid;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+.bottom p
+{
+    text-align: center;
+    margin: 15% auto;
+    color: #38c;
+}
+#menu
+{
+    margin-right: 30%;
+    left: 10px;
+}
+#shop
+{
+    margin-left: 30%;
+    right: 10px;
+}
+.upgradeList{
+    width:100%;
+    height:100%;
+    margin: 0;
+    padding: 0;
+}
+.listHead{
+    border-bottom: 1px solid black;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.listItem{
+    list-style-type: none;
+    float: left;
+    width: 25%;
+    color: black;
+    text-align: center;
+}
+#headings, .effects{
+    height: 40px;
+    width: 100%;
+}
+.effects p {
+    width: 25%;
+    height: 100%;
+    float: left;
+    margin: 0;
+}
+#menuPopUp a
+{
+    display: block;
+    margin-bottom: 10px;
+}
+.SavedGame
+{
+    position: absolute;
+    font-weight: bold;
+    color: black;
+}
+.ui-header .ui-title, .ui-footer .ui-title {
+    font-size: 1.4em;
+}
+.MenuFooter
+{
+    color: black;
+}
+.Black
+{
+    color: black;
+}
+#Resetme
+{
+    margin-left: 40%;
+}
