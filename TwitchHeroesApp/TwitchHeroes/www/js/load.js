@@ -11,8 +11,8 @@ if (localStorage.getItem("GameSave") != null)
     UpdateMoney(save[2].Money);
     UpdateLevel();
     UpdateCounter();
-    DrawShop();
     console.log("----------------------Save Loaded -------------------------------------");
 
 
 }
+DrawShop();
