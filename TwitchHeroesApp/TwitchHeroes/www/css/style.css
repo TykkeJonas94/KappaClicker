@@ -25,6 +25,12 @@ p{
     margin-right: calc(10% - 10px);
     box-shadow: 5px 5px 5px #888888;
 }
+.effects p {
+    width: 25%;
+    height: 100%;
+    float: left;
+    margin: 0;
+}
 #level
 {
     margin-right: 10px;
