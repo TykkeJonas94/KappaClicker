@@ -17,11 +17,20 @@ function upgrade(upgName, upgPrice, upgEffectName, upgEffectValue, upgEffect){
     this.upgEffect = upgEffect;
 }
 
-$(document).on('click','#shop',function(){
-    for(var i = 0; i < UpgradeList.length; i++){
-        $('.upgradeList').append('<li class="listItem">'+ UpgradeList[i].upgName +'</li>');
-        $('.upgradeList').append('<li class="listItem">'+ UpgradeList[i].upgEffectName +'</li>');
-        $('.upgradeList').append('<li class="listItem">'+ UpgradeList[i].upgPrice +'</li>');
-    }
-});
+(function($){
+    $(document).on('click','#shop',function(){
+        for(var i = 0; i < UpgradeList.length; i++){
+            console.log("fgt!");
+            $('#upgradeList')   .append('<div class="effects">')
+                                .append('<p class="listItem">'+ UpgradeList[i].upgName +'</p>')
+                                .append('<p class="listItem">'+ UpgradeList[i].upgEffectName +'</p>')
+                                .append('<p class="listItem">'+ UpgradeList[i].upgPrice +'</p>')
+                                .append('</div>');
 
+            /*$('#upgradeList').append('<p class="listItem">'+ UpgradeList[i].upgName +'</p>');
+            $('#upgradeList').append('<p class="listItem">'+ UpgradeList[i].upgEffectName +'</p>');
+            $('#upgradeList').append('<p class="listItem">'+ UpgradeList[i].upgPrice +'</p>');
+            $('#upgradeList').append('</div>');*/
+        }
+    })
+})(jQuery);
