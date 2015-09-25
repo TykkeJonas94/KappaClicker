@@ -15,3 +15,4 @@ if (localStorage.getItem("GameSave") != null)
 
 
 }
+DrawShop();

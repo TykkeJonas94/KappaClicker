@@ -48,7 +48,8 @@ $(document).on('click','#SaveGame',function(){
             {"DamagePerSecond": DamagePerSecond},
             {"Money": Money},
             {"Level": Level},
-            {"enemyCount": enemyCount}
+            {"enemyCount": enemyCount},
+            {"Upgrades": UpgradeList}
         ]));
 
     Write("Saved Game!",0);
