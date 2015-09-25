@@ -131,9 +131,19 @@ p{
 .listItem{
     list-style-type: none;
     float: left;
-    width: calc(100% / 3);
+    width: 25%;
     color: black;
     text-align: center;
+}
+#headings, .effects{
+    height: 40px;
+    width: 100%;
+}
+.effects p {
+    width: 25%;
+    height: 100%;
+    float: left;
+    margin: 0;
 }
 #menuPopUp a
 {
