@@ -86,16 +86,25 @@ p{
     border: 3px solid black;
 }
 .bottom{
-    height: 50px;
+  /*  height: 50px;
     width: 20%;
     position: absolute;
     background-color: green;
     bottom: 10px;
-    box-shadow: 2px 1px 1px #888888;
+    box-shadow: 2px 1px 1px #888888; */
+
+    width: 100px;
+    height: 50px;
+    border: 1px #000000 solid;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
 }
 .bottom p
 {
-    margin-top: 20%;
+    text-align: center;
+    margin: 15% auto;
+    color: #38c;
 }
 #menu
 {
@@ -123,6 +132,7 @@ p{
     list-style-type: none;
     float: left;
     width: calc(100% / 3);
+    color: black;
     text-align: center;
 }
 #menuPopUp a
