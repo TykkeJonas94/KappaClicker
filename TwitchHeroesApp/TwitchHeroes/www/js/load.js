@@ -6,13 +6,13 @@ if (localStorage.getItem("GameSave") != null)
     DamagePerSecond = save[1].DamagePerSecond;
     Level = save[3].Level - 1;
     enemyCount = save[4].enemyCount;
+    UpgradeList = save[5].Upgrades;
 
     UpdateMoney(save[2].Money);
     UpdateLevel();
     UpdateCounter();
-
+    DrawShop();
     console.log("----------------------Save Loaded -------------------------------------");
 
 
 }
-DrawShop();

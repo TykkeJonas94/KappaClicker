@@ -33,7 +33,7 @@ function upgrade(upgName, upgPrice, upgEffectName, upgEffectValue, upgEffect, up
             $('#effects'+ i).append('<p class="listItem" id="d'+ i +'">'+ UpgradeList[i].upgQuantity +'</p>');
             $('#effects'+ i).append('<p class="listItem upgBuy" id="e'+ i +'">'+ UpgradeList[i].upgPrice +'</p>');
         }
-    }
+    };
     $(document).on('click','.upgBuy',function(){
         var upgradeID = $(this).attr('id');
         upgradeID = upgradeID.replace('e', '');
