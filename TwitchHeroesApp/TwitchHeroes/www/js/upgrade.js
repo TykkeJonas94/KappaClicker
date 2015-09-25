@@ -7,7 +7,9 @@
 
 
 var UpgradeList = [ {upgName:"upgrade1", upgPrice:10, upgEffectName:"+1 Damage per Click", upgEffectValue:0, upgEffect:1, upgQuantity:0},
-                    {upgName:"upgrade2", upgPrice:40, upgEffectName:"+1 Damage per Second", upgEffectValue:1, upgEffect:1, upgQuantity:0}
+                    {upgName:"upgrade2", upgPrice:100, upgEffectName:"+10 Damage per Click", upgEffectValue:0, upgEffect:10, upgQuantity:0},
+                    {upgName:"upgrade3", upgPrice:40, upgEffectName:"+1 Damage per Second", upgEffectValue:1, upgEffect:1, upgQuantity:0},
+                    {upgName:"upgrade4", upgPrice:400, upgEffectName:"+10 Damage per Second", upgEffectValue:1, upgEffect:10, upgQuantity:0}
 ];
 
 function upgrade(upgName, upgPrice, upgEffectName, upgEffectValue, upgEffect, upgQuantity){
@@ -20,11 +22,8 @@ function upgrade(upgName, upgPrice, upgEffectName, upgEffectValue, upgEffect, up
 }
 
 (function($){
-
-    DrawShop();
     // Draws shop
-    function DrawShop()
-    {
+    window.DrawShop = function(){
         for(var i = 0; i < UpgradeList.length; i++){
             $('#upgradeList').append('<div class="effects" id="effects'+ i +'">');
             $('#upgradeList').append('</div>');
@@ -59,8 +58,8 @@ function upgrade(upgName, upgPrice, upgEffectName, upgEffectValue, upgEffect, up
         // updates shop text
     function UpdateShopText(id)
     {
-       var lol = parseInt($('#'+ id).text());
-        lol++;
-        $('#'+ id).text(lol);
+        var value = parseInt($('#'+ id).text());
+        value++;
+        $('#'+ id).text(value);
     }
 })(jQuery);
