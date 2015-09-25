@@ -20,37 +20,47 @@ function upgrade(upgName, upgPrice, upgEffectName, upgEffectValue, upgEffect, up
 }
 
 (function($){
-    for(var i = 0; i < UpgradeList.length; i++){
-        $('#upgradeList').append('<div class="effects" id="effects'+ i +'">');
-        $('#upgradeList').append('</div>');
 
-        $('#effects'+ i).append('<p class="listItem">'+ UpgradeList[i].upgName +'</p>');
-        $('#effects'+ i).append('<p class="listItem">'+ UpgradeList[i].upgEffectName +'</p>');
-        $('#effects'+ i).append('<p class="listItem">'+ UpgradeList[i].upgQuantity +'</p>');
-        $('#effects'+ i).append('<p class="listItem upgBuy" id="e'+ i +'">'+ UpgradeList[i].upgPrice +'</p>');
+    DrawShop();
+    // Draws shop
+    function DrawShop()
+    {
+        for(var i = 0; i < UpgradeList.length; i++){
+            $('#upgradeList').append('<div class="effects" id="effects'+ i +'">');
+            $('#upgradeList').append('</div>');
+
+            $('#effects'+ i).append('<p class="listItem">'+ UpgradeList[i].upgName +'</p>');
+            $('#effects'+ i).append('<p class="listItem">'+ UpgradeList[i].upgEffectName +'</p>');
+            $('#effects'+ i).append('<p class="listItem" id="d'+ i +'">'+ UpgradeList[i].upgQuantity +'</p>');
+            $('#effects'+ i).append('<p class="listItem upgBuy" id="e'+ i +'">'+ UpgradeList[i].upgPrice +'</p>');
+        }
     }
-
     $(document).on('click','.upgBuy',function(){
         var upgradeID = $(this).attr('id');
         upgradeID = upgradeID.replace('e', '');
 
         if(Money > UpgradeList[upgradeID].upgPrice) {
+
             UpgradeList[upgradeID].upgQuantity++;
             UpdateMoney(-$(this).text());
 
             if (UpgradeList[upgradeID].upgEffectValue == 0) {
                 ClickDamage += UpgradeList[upgradeID].upgEffect;
+                UpdateShopText('d'+upgradeID);
 
-                console.log(ClickDamage);
             }
             else if (UpgradeList[upgradeID].upgEffectValue == 1) {
                 DamagePerSecond += UpgradeList[upgradeID].upgEffect;
-
-                console.log(DamagePerSecond);
-            }
-            else {
-                console.log("Get fucked!");
+                UpdateShopText('d' + upgradeID);
             }
         }
+
     });
+        // updates shop text
+    function UpdateShopText(id)
+    {
+       var lol = parseInt($('#'+ id).text());
+        lol++;
+        $('#'+ id).text(lol);
+    }
 })(jQuery);
