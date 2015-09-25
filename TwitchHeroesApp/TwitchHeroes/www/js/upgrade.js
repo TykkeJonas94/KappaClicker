@@ -19,7 +19,9 @@ function upgrade(upgName, upgPrice, upgEffectName, upgEffectValue, upgEffect){
 
 $(document).on('click','#shop',function(){
     for(var i = 0; i < UpgradeList.length; i++){
-
+        $('.upgradeList').append('<li class="listItem">'+ UpgradeList[i].upgName +'</li>');
+        $('.upgradeList').append('<li class="listItem">'+ UpgradeList[i].upgEffectName +'</li>');
+        $('.upgradeList').append('<li class="listItem">'+ UpgradeList[i].upgPrice +'</li>');
     }
 });
 
