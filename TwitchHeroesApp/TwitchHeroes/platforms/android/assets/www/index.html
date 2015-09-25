@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+
+        <!-- Include meta tag to ensure proper rendering and touch zooming -->
+        <meta name="viewport" content="height=device-height, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Include jQuery Mobile stylesheets -->
+        <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+
+
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/keyframes.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <title>Twitch Heroes</title>
+    </head>
+    <body>
+
+    <div data-role="page" id="pageOne">
+
+        <div class="top" id="money">
+            <p class="moneyP">totalMoney</p>
+        </div>
+
+        <div class="top" id="level">
+            <p id="levelP">currentLevel</p>
+        </div>
+
+        <div class="counter" id="counter">
+            <p id="counterP">enemyCounter</p>
+        </div>
+
+        <div class="enemy" id="enemy">
+            <img src="img/enemy/BibleThump.png" alt="" id="enemyImg" class="ClickAnimation">
+        </div>
+
+        <div class="name" id="name">
+            <p id="nameP">enemyName</p>
+        </div>
+
+        <div class="health" id="health">
+            <p class="healthText" id="healthText">enemyHealthText</p>
+                 <div id="HealthBar" class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
+        </div>
+
+        <a href="#menuPopUp" class="dialogPopup">
+            <div class="bottom" id="menu">
+                <p>menu</p>
+            </div>
+        </a>
+
+        
+        <a href="#shopPopUp" class="dialogPopup">
+            <div class="bottom" id="shop">
+                <p>shop</p>
+            </div>
+        </a>
+    </div>
+
+    <!-- SHOP -->
+    <div data-role="page" data-dialog="true" id="shopPopUp">
+        <div data-role="header">
+            <h1>Shop</h1>
+        </div>
+
+        <div data-role="main" class="ui-content">
+            <div class="CenterPopup">
+                <p class="moneyP" style="color: black">totalMoney</p>
+
+                <div id="upgradeList">
+                    <div id="headings">
+                        <p class="listItem listHead">Name</p>
+                        <p class="listItem listHead">Effect</p>
+                        <p class="listItem listHead">Quantity</p>
+                        <p class="listItem listHead">Price</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div data-role="footer">
+            <p class="MenuFooter">&copy; Kenneth & Jonas </p>
+        </div>
+    </div>
+
+
+            <!-- Menu -->
+    <div data-role="page" data-dialog="true"  id="menuPopUp">
+        <div data-role="header">
+            <h1>Menu</h1>
+        </div>
+
+        <div data-role="main" class="ui-content">
+            <div class="CenterPopup">
+                <a href="#pageOne"  id="SaveGame">Save</a>
+                <a href="#Contact" class="plus">Contact</a>
+                <a href="#Reset" class="plus">Reset Everything</a>
+                <a href="#pageOne" class="back">Back</a>
+            </div>
+        </div>
+        <div data-role="footer">
+            <p class="MenuFooter">&copy; Kenneth & Jonas </p>
+        </div>
+    </div>
+
+
+    <!-- #Contact Menu -->
+    <div data-role="page" data-dialog="true" id="Contact">
+        <div data-role="header" class="popup-header">
+            <h1>Menu</h1>
+        </div>
+
+        <div data-role="main" class="ui-content">
+            <form action="#pageone" id="contactform">
+                <input name="name" id="contactName" placeholder="Name"><br>
+                <input name="email" id="contactEmail" placeholder="Email"><br>
+                <textarea name="comment" id="contactComment" placeholder="Comment"></textarea>
+                <input type="submit" id="SubmitContact" name="SubmitContact" value="Contact Me">
+            </form>
+        </div>
+        <div data-role="footer">
+            <p class="MenuFooter">&copy; Kenneth & Jonas</p>
+        </div>
+    </div>
+
+
+    <!-- Popup reset -->
+    <div data-role="page" data-dialog="true" id="Reset">
+        <div data-role="header" class="popup-header">
+            <h1>Menu</h1>
+        </div>
+
+        <div data-role="main" class="ui-content">
+            <p class="Black">Are you sure that you want to reset EVERYTHING? <br>
+                You will have to start from scratch if you choose to do so. <br>
+            </p>
+            <a href="#pageOne" id="Resetme">Reset</a>
+        </div>
+        <div data-role="footer">
+            <p class="MenuFooter">&copy; Kenneth & Jonas</p>
+        </div>
+    </div>
+
+
+
+        <!-- Include the jQuery library -->
+        <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+        <!-- Bootstrap -->
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <!-- Include the jQuery Mobile library -->
+        <script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+        <script type="text/javascript" src="js/menu.js"></script>
+        <script type="text/javascript" src="js/upgrade.js"></script>
+        <script type="text/javascript" src="js/class.js"></script>
+        <script type="text/javascript" src="js/game.js"></script>
+        <script type="text/javascript" src="js/click.js"></script>
+        <script type="text/javascript" src="js/load.js"></script>
+    </body>
+</html>
