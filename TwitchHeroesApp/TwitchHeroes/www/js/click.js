@@ -15,7 +15,16 @@ var image = $('#enemyImg');
 
     // DamagePerSecond function runs every 0.2 second
     setInterval(function(){
-        CurrentEnemy.health -= DamagePerSecond / 5;
+        if (CurrentEnemy.health <= (DamagePerSecond / 5))
+        {
+            console.log("Health is 0");
+            CurrentEnemy.health = 0;
+        }
+        else
+        {
+            console.log("Health is over 1");
+            CurrentEnemy.health -= DamagePerSecond / 5;
+        }
         $(HealthText).text(CurrentEnemy.health.toFixed(0) + " HP");
         $(HealthBar).css("width", (CurrentEnemy.health / CurrentEnemy.MaxHealth) * 100 + "%");
         if (CurrentEnemy.health <= 0)
