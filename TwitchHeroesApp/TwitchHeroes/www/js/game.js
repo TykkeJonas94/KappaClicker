@@ -44,6 +44,7 @@ function EnemyCounter(){
     if(enemyCount >= maxEnemy){
         enemyCount = 0;
         UpdateLevel();
+        Write("Level up!",0,"yellow");
     }
     CurrentEnemy = new MakeEnemy(EnemyList[Math.floor(Math.random() * EnemyList.length)], Level * 10, Level * 200);
 }

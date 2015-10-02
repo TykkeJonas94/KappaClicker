@@ -10,32 +10,35 @@ $(document).on('click','.dialogPopup', function(){
 });
 
 
-function Write(text, margin)
+function Write(text, margin, color)
 {
-
-    var ticket = "<h1 class='SavedGame'> "+ text +" </h1>";
-    $(ticket).appendTo("body");
-    var ThisTicket = $('.SavedGame');
-    var ww = $(window).width();
-    var wh = $(window).height();
-    var posx = Math.floor((ww / 5));
-    var posy = Math.floor((wh / 3));
-    if (margin != 0)
+    if (color == undefined)
     {
-        ThisTicket.css("top", posy + "px").css("left", posx + "px").css("margin-left", margin + "%");
+        color = black;
     }
-    else
-    {
-        ThisTicket.css("top", posy + "px").css("left", posx + "px");
+    if (Popup == false) {
+        var ticket = "<h1 class='SavedGame'> " + text + " </h1>";
+        $(ticket).appendTo("body");
+        var ThisTicket = $('.SavedGame');
+        var ww = $(window).width();
+        var wh = $(window).height();
+        var posx = Math.floor((ww / 5));
+        var posy = Math.floor((wh / 3));
+        if (margin != 0) {
+            ThisTicket.css("top", posy + "px").css("left", posx + "px").css("margin-left", margin + "%").css("color", color);
+        }
+        else {
+            ThisTicket.css("top", posy + "px").css("left", posx + "px").css("color", color);
+        }
+        // animate ticket to go up and fade
+        ThisTicket
+            .animate({
+                opacity: 'hide',      // animate fade
+                top: 0        // animation slideUp
+            }, 1500, function () {
+                $(this).remove();
+            });
     }
-    // animate ticket to go up and fade
-    ThisTicket
-        .animate({
-            opacity: 'hide',      // animate fade
-            top: 0        // animation slideUp
-        }, 1500, function () {
-            $(this).remove();
-        });
 }
 
 

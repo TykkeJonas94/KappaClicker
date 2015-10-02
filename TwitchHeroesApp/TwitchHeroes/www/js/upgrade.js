@@ -6,10 +6,10 @@
 /**Upgrade Effect Value     1 = +damagePerSecond */
 
 
-var UpgradeList = [ {upgName:"upgrade1", upgPrice:10, upgEffectName:"+1 Damage per Click", upgEffectValue:0, upgEffect:1, upgQuantity:0},
-                    {upgName:"upgrade2", upgPrice:100, upgEffectName:"+10 Damage per Click", upgEffectValue:0, upgEffect:10, upgQuantity:0},
-                    {upgName:"upgrade3", upgPrice:40, upgEffectName:"+1 Damage per Second", upgEffectValue:1, upgEffect:1, upgQuantity:0},
-                    {upgName:"upgrade4", upgPrice:400, upgEffectName:"+10 Damage per Second", upgEffectValue:1, upgEffect:10, upgQuantity:0}
+var UpgradeList = [ {upgName:"upgrade1", upgPrice:10, upgEffectName:"+1 DPC", upgEffectValue:0, upgEffect:1, upgQuantity:0},
+                    {upgName:"upgrade2", upgPrice:100, upgEffectName:"+10 DPC", upgEffectValue:0, upgEffect:10, upgQuantity:0},
+                    {upgName:"upgrade3", upgPrice:40, upgEffectName:"+1 DPS", upgEffectValue:1, upgEffect:1, upgQuantity:0},
+                    {upgName:"upgrade4", upgPrice:400, upgEffectName:"+10 DPS", upgEffectValue:1, upgEffect:10, upgQuantity:0}
 ];
 
 function upgrade(upgName, upgPrice, upgEffectName, upgEffectValue, upgEffect, upgQuantity){
@@ -46,7 +46,6 @@ function upgrade(upgName, upgPrice, upgEffectName, upgEffectValue, upgEffect, up
             if (UpgradeList[upgradeID].upgEffectValue == 0) {
                 ClickDamage += UpgradeList[upgradeID].upgEffect;
                 UpdateShopText('d'+upgradeID);
-
             }
             else if (UpgradeList[upgradeID].upgEffectValue == 1) {
                 DamagePerSecond += UpgradeList[upgradeID].upgEffect;
